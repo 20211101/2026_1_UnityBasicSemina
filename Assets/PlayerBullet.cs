@@ -3,7 +3,7 @@ using UnityEngine;
 public class PlayerBullet : MonoBehaviour
 {
     float speed = 5f;
-    private void Awake()
+    private void Update()
     {
         transform.position += transform.up * speed * Time.deltaTime;
     }
